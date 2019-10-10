@@ -2,11 +2,13 @@
 Mr.J;
 :lib: hexo-cake-google-analytics
 :cake: 1.1.0+
+:next: built_in
 :config_key: google_analytics
 :source-highlighter: highlightjs
 
 image:https://img.shields.io/npm/v/{lib}[npm]
-image:https://img.shields.io/badge/theme-cake:{cake}-blue.svg[cake theme, link=https://github.com/jiangtj/hexo-theme-cake]
+image:https://img.shields.io/badge/cake-{cake}-blue.svg[cake, link=https://github.com/jiangtj/hexo-theme-cake]
+image:https://img.shields.io/badge/next-{next}-blue.svg[next, link=https://theme-next.org]
 
 == How to use
 

@@ -6,7 +6,7 @@ Mr.J;
 
 == How to use
 
-[source,bash]
+[source,bash,subs="verbatim,attributes"]
 ----
 yarn add {lib}
 ----

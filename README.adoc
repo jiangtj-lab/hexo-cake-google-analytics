@@ -17,7 +17,7 @@ You can config by `{config_key}` in `hexo` `theme` or `data` config files.
 
 In hexo or theme:
 
-[source,yaml]
+[source,yaml,subs="normal"]
 ----
 {config_key}:
 include::default.yaml[indent=2]
@@ -25,9 +25,9 @@ include::default.yaml[indent=2]
 
 In `{config_key}.yml` data file:
 
-[source,yaml]
+[source,yaml,subs="normal"]
 ----
 include::default.yaml[]
 ----
 
-You can find more info in [default config file](default.yaml).
+You can find more info in link:default.yaml[default config file].

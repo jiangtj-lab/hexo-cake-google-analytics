@@ -1,0 +1,33 @@
+= hexo cake google analytics
+Mr.J;
+:lib: hexo-cake-google-analytics
+:config_key: google_analytics
+:source-highlighter: highlightjs
+
+== How to use
+
+[source,bash]
+----
+yarn add {lib}
+----
+
+== Config
+
+You can config by `{config_key}` in `hexo` `theme` or `data` config files.
+
+In hexo or theme:
+
+[source,yaml]
+----
+{config_key}:
+include::default.yaml[indent=2]
+----
+
+In `{config_key}.yml` data file:
+
+[source,yaml]
+----
+include::default.yaml[]
+----
+
+You can find more info in [default config file](default.yaml).

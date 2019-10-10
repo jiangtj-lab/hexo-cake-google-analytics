@@ -1,26 +1,26 @@
-{%- if theme.google_analytics.tracking_id %}
-  {%- if not theme.google_analytics.only_pageview %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ theme.google_analytics.tracking_id }}"></script>
+{%- if tracking_id %}
+  {%- if not only_pageview %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ tracking_id }}"></script>
     <script{{ pjax }}>
       var host = window.location.hostname;
-      if (host !== "localhost" || !{{ theme.google_analytics.localhost_ignored }}) {
+      if (host !== "localhost" || !{{ localhost_ignored }}) {
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', '{{ theme.google_analytics.tracking_id }}');
+        gtag('config', '{{ tracking_id }}');
       }
     </script>
   {%- endif %}
-  {%- if theme.google_analytics.only_pageview %}
+  {%- if only_pageview %}
     <script>
       function sendPageView() {
         var host = window.location.hostname;
-        if (host == "localhost" && {{ theme.google_analytics.localhost_ignored }}) return;
+        if (host == "localhost" && {{ localhost_ignored }}) return;
         var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
         localStorage.setItem('uid', uid);
         navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
           v  : 1,
-          tid: '{{ theme.google_analytics.tracking_id }}',
+          tid: '{{ tracking_id }}',
           cid: uid,
           t  : 'pageview',
           dp : encodeURIComponent(location.pathname)

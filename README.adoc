@@ -5,8 +5,8 @@ Mr.J;
 :config_key: google_analytics
 :source-highlighter: highlightjs
 
-image::https://img.shields.io/npm/v/{lib}[npm]
-image::https://img.shields.io/badge/Theme-Cake:{cake}-blue.svg[cake theme, link=https://github.com/jiangtj/hexo-theme-cake]
+image:https://img.shields.io/npm/v/{lib}[npm]
+image:https://img.shields.io/badge/theme-cake:{cake}-blue.svg[cake theme, link=https://github.com/jiangtj/hexo-theme-cake]
 
 == How to use
 

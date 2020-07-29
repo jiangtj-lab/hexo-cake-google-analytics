@@ -14,6 +14,7 @@ image:https://img.shields.io/badge/next-{next}-blue.svg[next, link=https://theme
 
 [source,bash,subs="verbatim,attributes"]
 ----
+yarn add hexo-renderer-swig
 yarn add {lib}
 ----
 
